@@ -1,0 +1,16 @@
+
+<html>
+<style media="screen">
+  li { list-style-type: none; }
+</style>
+<ul>
+  <h1>Edit <%= @article.title %></h1>
+  <form action="/articles/<%= @article.id %>" method="POST">
+    <input id = "hidden" type="hidden" name="_method" value="PATCH">
+    <li><h3><label for="title">Change title to: </label>
+      <input id="title" type="text" name="title" value= "<%= @article.title %>"><h3></li>
+        <li><h3><label for="content">Change content to: </label>
+          <input id="content" type="text" name="content" value="<%= @article.content %>"><h3></li>
+            <input type="submit" name="submit">
+            <ul>
+              </html>
